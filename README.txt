@@ -1,22 +1,7 @@
-TOLUWALOPE AKINBINU — DESIGNER PORTFOLIO
+TOLUWALOPE AKINBINU — PORTFOLIO UPDATE
 
-FILES
-- index.html: portfolio page
-- styles.css: responsive visual styling
-- app.js: interactions and basic Supabase connection check
-- config.js: public Supabase project URL and publishable key
+Files: index.html (portfolio homepage), case-studies.html (responsive case study collection), case-studies.css (responsive visual system).
 
-BEFORE DEPLOYING
-1. Open config.js in Notepad or VS Code.
-2. Replace PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE with the publishable key from your Supabase project.
-   Keep the quotation marks around the key.
-3. Save the file.
-4. In Vercel, create a new project by uploading the WHOLE designer-portfolio-supabase folder (not only index.html).
-5. After deployment, open the website and look below the project cards for the database connection status.
+The homepage keeps the existing portfolio styling and routes featured project cards to the detailed case studies page. The case study pages link out to the supplied Behance and Figma projects. Artwork in this version is custom responsive CSS artwork rather than screenshots of the Figma designs; Figma links are included so the source work remains accessible.
 
-IMPORTANT
-- The Supabase URL should be https://cbixzyqkhrxxpjmtkmfn.supabase.co (do not add /rest/v1).
-- Publishable keys are designed for browser use, but your Supabase Row Level Security (RLS) policies must be correct.
-- NEVER put a service_role key, secret API key, or database password in config.js.
-- This version checks whether it can read the projects table, but it does not yet include a secure admin dashboard or automatic project publishing. The project cards currently link to the known Behance case studies.
-- The separate MAKING, DAILY website is not included in this portfolio folder.
+Deployment: copy these files into the root of the existing designer-portfolio GitHub repository. Do not replace or modify MAKING, DAILY. Vercel should deploy automatically after the files are committed.
